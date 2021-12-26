@@ -7,7 +7,10 @@
         $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
         $headers = "From: " . $from;
         if(mail($to,$subject,$message,$headers)){
-            echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+            echo "Mail Sent. Thank you " . $name . ", I will contact you shortly.";
+        }
+        else{
+            echo "Seems like an error occured. Please try again with complete information."
         }
     }
 ?>
