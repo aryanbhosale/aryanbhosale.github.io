@@ -7,7 +7,7 @@
         $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
         $headers = "From: " . $from;
         mail($to,$subject,$message,$headers);
-        if(mail($to$subject,$message,$headers)){
+        if(mail($to,$subject,$message,$headers)){
             echo "Messages recieved";
         }
         else{
