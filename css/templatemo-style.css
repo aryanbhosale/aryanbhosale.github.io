@@ -260,11 +260,16 @@ hr {
 .page-section {
   padding-top: 80px;
 }
-
 /*---------------------------------------------------------
  3. Header
 -------------------------------------------------------- */
 .sidebar-menu {
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
   float: left;
   width: 23%;
   height: 100%;
@@ -273,6 +278,19 @@ hr {
   color: white;
   overflow-y: hidden;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media screen and (max-width: 1290px) {
   .sidebar-menu {
     overflow-y: scroll;
@@ -347,9 +365,27 @@ h3.profile-title {
 }
 
 .responsive-header {
-  background: #5f6d7e;
+  background-color: #6b0f1a;
+  background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
   text-align: center;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 @media screen and (max-width: 992px) {
   .responsive-header .main-navigation {
     margin-top: 10px;
